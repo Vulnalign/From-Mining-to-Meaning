@@ -1,0 +1,6 @@
+DATA/vulnalign_raw.jsonl
+DATA/vulnalign_validated.jsonl
+
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.env
