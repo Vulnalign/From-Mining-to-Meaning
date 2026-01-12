@@ -1,7 +1,8 @@
 # never commit datasets / large files
-DATA/
-*.jsonl
-*.zip
+DATA/vulnalign_raw.jsonl
+DATA/vulnalign_validated.jsonl
+DATA/validated.csv
+DATA/vulnalign_metadata.zip
 
 # local secrets
 .env
