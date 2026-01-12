@@ -13,7 +13,7 @@ The repository is structured to allow reviewers to inspect the methodology and r
 vulnalign-artifact/
 │
 ├── CODE/
-│ ├── mining/ # NVD mining, commit discovery, patch extraction
+│ ├── mining/ # NVD mining, commit discovery, patch extraction   --
 │ ├── validation/ # Static validation (Semgrep-based)
 │ ├── ontology_scripts/ # CWE hierarchy reasoning and reconciliation
 │ ├── sanitize_ipynb.py # Utility script (formatting, cleanup)
