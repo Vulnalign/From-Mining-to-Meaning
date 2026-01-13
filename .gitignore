@@ -3,7 +3,7 @@ DATA/vulnalign_raw.jsonl
 DATA/vulnalign_validated.jsonl
 DATA/validated.csv
 DATA/vulnalign_metadata.zip
-
+DATA/extra/
 # local secrets
 .env
 
