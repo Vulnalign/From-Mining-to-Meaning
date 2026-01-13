@@ -51,8 +51,9 @@ It includes (field names may be abbreviated in practice):
   - CVE and repository metadata (e.g., cve_id, repo_url, commit_sha)
   - Vulnerable / patched code identifiers (e.g., original_filename, file paths)
   -Semgrep match information:
-      -high-precision / extended-precision counts (HP/EP)
-      -rule identifiers
+
+      - high-precision / extended-precision counts (HP/EP)
+      - rule identifiers
   - Flags for mismatches / noisy examples
   -Intermediate validation metadata used to derive the final dataset
 
