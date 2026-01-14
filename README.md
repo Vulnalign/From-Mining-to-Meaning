@@ -17,14 +17,14 @@ The repository is structured to allow reviewers to inspect the methodology and r
 vulnalign-artifact/
 │
 ├── CODE/
-│   ├── mining/                       # NVD mining, commit discovery, patch extraction
-│   ├── validation/                   # Static validation (Semgrep-based)
-│   ├── ontology_scripts/             # CWE hierarchy reasoning and reconciliation
-│   └── sanitize.py                   # Utility script (formatting / cleanup)
+│   ├── mining/                                       # NVD mining, commit discovery, patch extraction
+│   ├── validation/                                   # Static validation (Semgrep-based)
+│   ├── ontology_scripts/                             # CWE hierarchy reasoning and reconciliation
+│   └── sanitize.py                                    # Utility script (formatting / cleanup)
 │
 ├── DATA/
-│   └── master_validated_dataset.jsonl    # Representative dataset snapshots (JSONL)
-│   └── samples/              # Representative dataset snapshots (JSONL)
+│   └── master_validated_dataset.jsonl                # Representative dataset snapshots of validation output, including both “good” and “noisy” cases (JSONL)
+│   └── nique_validated_dataset_for_review.jsonl      # Representative dataset snapshots of clean subset of validated cases (JSONL)
 │
 ├── OPEN_SCIENCE.md
 ├── REPRODUCIBILITY.md
