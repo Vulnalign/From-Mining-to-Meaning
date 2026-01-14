@@ -17,12 +17,13 @@ The repository is structured to allow reviewers to inspect the methodology and r
 vulnalign-artifact/
 │
 ├── CODE/
-│   ├── mining/               # NVD mining, commit discovery, patch extraction
-│   ├── validation/           # Static validation (Semgrep-based)
-│   ├── ontology_scripts/     # CWE hierarchy reasoning and reconciliation
-│   └── sanitize.py           # Utility script (formatting / cleanup)
+│   ├── mining/                       # NVD mining, commit discovery, patch extraction
+│   ├── validation/                   # Static validation (Semgrep-based)
+│   ├── ontology_scripts/             # CWE hierarchy reasoning and reconciliation
+│   └── sanitize.py                   # Utility script (formatting / cleanup)
 │
 ├── DATA/
+│   └── master_validated_dataset.jsonl    # Representative dataset snapshots (JSONL)
 │   └── samples/              # Representative dataset snapshots (JSONL)
 │
 ├── CONFIG/
@@ -46,33 +47,23 @@ Instead, we provide two representative samples that match the schema and process
 📄 Dataset Samples
 
 DATA/master_validated_dataset.jsonl
+This file is intended to illustrate the complete validation output, including both “good” and “noisy” cases, so reviewers can see how Semgrep and filtering operate.
   - JSONL file (one JSON object per line).
   - Contains the full Semgrep validation output for a sample of vulnerability–fix pairs.
-  -It includes (field names may be abbreviated in practice):
-
-  - CVE and repository metadata (e.g., cve_id, repo_url, commit_sha)
-  - Vulnerable / patched code identifiers (e.g., original_filename, file paths)
-  -Semgrep match information:
-      -  Exact Positive / Hierarchy True Positive counts (EP/HP)
-      - rule identifiers
-  - Flags for mismatches / noisy examples
-  -Intermediate validation metadata used to derive the final dataset
-
-This file is intended to illustrate the complete validation output, including both “good” and “noisy” cases, so reviewers can see how Semgrep and filtering operate.
+  - It includes:
+    - CVE and repository metadata (e.g., cve_id, repo_url, commit_sha), Vulnerable / patched code identifiers (e.g., original_filename, file paths)
+    - Semgrep match information: Exact Positive / Hierarchy True Positive counts (EP/HP), rule identifiers, flags for mismatches / noisy examples
+    - Intermediate validation metadata used to derive the final dataset
 
 
-2. DATA/unique_validated_dataset_for_review.jsonl
-
+DATA/unique_validated_dataset_for_review.jsonl
+This file is intended for quick inspection and for understanding the final dataset structure without noise.
   - JSONL file (one JSON object per line).
-  - Contains only validated examples (HP/EP), i.e. high-confidence matches after filtering.
-
+  - Contains only validated examples (HP/EP).
 Compared to master_validated_dataset.jsonl, this file:
-
-  - Excludes noisy / mismatched entries
-  - Keeps only the unique, validated vulnerability–fix pairs that pass the filtering criteria
+  - Excludes mismatched entries
   - Reflects the clean subset used for experiments in the paper
 
-This file is intended for quick inspection and for understanding the final dataset structure without noise.
 
 ---
 
