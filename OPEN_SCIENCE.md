@@ -4,20 +4,17 @@ This repository contains the artifacts required to evaluate the accompanying ano
 
 ## Artifacts Provided
 1. Dataset
-   - DATA/validated/ : validated vulnerability–fix pairs
-   - DATA/raw/ : raw/mined data or a representative subset (if provided)
+   - DATA/master_validated_dataset.jsonl : validated vulnerability–fix pairs
+   - DATA/unique_validated_dataset_for_review.jsonl
+These are representative samples matching the structure of the full dataset.
 
 2. Tooling
-   - CODE/ : pipeline components (mining, validation, reconciliation, evaluation)
-   - CONFIG/ : experiment configurations
-
-3. Reproducibility
-   - SCRIPTS/setup_env.* : environment setup
-   - SCRIPTS/reproduce_results.* : reproduces key tables/figures/metrics
-
-## How to Use (High Level)
-- Install dependencies (see SCRIPTS/setup_env.*)
-- Run SCRIPTS/reproduce_results.* to regenerate key results
+   - CODE/ : pipeline components (mining, validation, ontology reasoning)
+   
+Documentation
+README.md
+OPEN_SCIENCE.md
 
 ## Restrictions (if applicable)
-If any artifact cannot be fully redistributed (e.g., size/licensing), representative subsets and the full pipeline are provided so reviewers can evaluate the methodology end-to-end.
+We provide a representative subset in the artifact repo for reproducibility and format verification.
+The full corpus is large (25GB); for double-blind review we provide subset + pipeline; full release will follow acceptance / available on request / available via anonymous link if you choose.
