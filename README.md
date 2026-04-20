@@ -1,7 +1,8 @@
-# VulnAlign Artifact (Anonymous Submission)
+# VulnAlign Artifact 
 
-This repository contains the code, sample data, and configuration files used to support the submission titled **From Mining to Meaning**.  
-The artifact demonstrates the dataset construction pipeline for:
+Artifact repository for the paper "From Mining to Meaning: Ontology-Driven Validation of Vulnerability Labels in Large-Scale Datasets" (ESORICS 2026)
+
+This repository contains the code, sample data, and configuration files used to support the submission titled **From Mining to Meaning**. The artifact demonstrates the dataset construction pipeline for:
 
 - Linking CVEs to vulnerable and patched code
 - Validating labels using static (rule-based) analysis
