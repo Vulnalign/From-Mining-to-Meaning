@@ -21,6 +21,7 @@ vulnalign-artifact/
 │   ├── mining/                                       # NVD mining, commit discovery, patch extraction
 │   ├── validation/                                   # Static validation (Semgrep-based)
 │   ├── ontology_scripts/                             # CWE hierarchy reasoning and reconciliation
+│   ├── experiments/                                  # Classification downstream task
 │   └── sanitize.py                                    # Utility script (formatting / cleanup)
 │
 ├── DATA/
