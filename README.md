@@ -1,6 +1,6 @@
 # VulnAlign Artifact (Anonymous Submission)
 
-This repository contains the code, sample data, and configuration files used to support the anonymous submission titled **VulnAlign**.  
+This repository contains the code, sample data, and configuration files used to support the submission titled **From Mining to Meaning**.  
 The artifact demonstrates the dataset construction pipeline for:
 
 - Linking CVEs to vulnerable and patched code
