@@ -90,3 +90,8 @@ sanitize.py
 Utility helper for:
   - Cleaning notebooks or exported files
   - Normalizing formats before committing / sharing
+
+
+
+Restrictions (if applicable)
+The full corpus is large (25GB), we provide a representative subset in the artifact repo for reproducibility and format verification. Full release will follow Zenodo
