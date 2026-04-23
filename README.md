@@ -22,13 +22,16 @@ vulnalign-artifact/
 │   ├── validation/                                   # Static validation (Semgrep-based)
 │   ├── ontology_scripts/                             # CWE hierarchy reasoning and reconciliation
 │   ├── experiments/                                  # Classification downstream task
+│   ├── reconstruction/                               #(post-submission)
+│   │   ├── build_commit_repo_mapping.py
+│   │   ├── merge_fixed_repo_into_refined.py
+│   │   └── reextract_aligned.py
 │   └── sanitize.py                                    # Utility script (formatting / cleanup)
 │
 ├── DATA/
 │   └── master_validated_dataset.jsonl                # Representative dataset snapshots of validation output, including both “good” and “noisy” cases (JSONL)
-│   └── nique_validated_dataset_for_review.jsonl      # Representative dataset snapshots of clean subset of validated cases (JSONL)
+│   └── unique_validated_dataset_for_review.jsonl      # Representative dataset snapshots of clean subset of validated cases (JSONL)
 │
-├── OPEN_SCIENCE.md
 ├── REPRODUCIBILITY.md
 └── README.md
 
@@ -91,7 +94,7 @@ Utility helper for:
   - Cleaning notebooks or exported files
   - Normalizing formats before committing / sharing
 
-
+Note: We identified structural inconsistencies in the code-after and developed a reconstruction pipeline after submission. The reconstruction pipeline resolves structural inconsistencies caused by patch overwriting and invalid repository references.  The improved dataset is released for transparency and future work.
 
 Restrictions (if applicable)
 The full corpus is large (25GB), we provide a representative subset in the artifact repo for reproducibility and format verification. Full release will follow Zenodo
