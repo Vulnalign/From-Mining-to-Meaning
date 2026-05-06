@@ -17,20 +17,19 @@ The repository is structured to allow reviewers to inspect the methodology and r
 ```text
 vulnalign-artifact/
 │
-├── CODE/
+├── code/
 │   ├── mining/                                       # NVD mining, commit discovery, patch extraction
 │   ├── validation/                                   # Static validation (Semgrep-based)
 │   ├── ontology_scripts/                             # CWE hierarchy reasoning and reconciliation
 │   ├── experiments/                                  # Classification downstream task
 │   └── sanitize.py                                    # Utility script (formatting / cleanup)
 │
-├── DATA/
+├── data/
 │   └── master_validated_dataset.jsonl                # Representative dataset snapshots of validation output, including both “good” and “noisy” cases (JSONL)
 │   └── unique_validated_dataset_for_review.jsonl      # Representative dataset snapshots of clean subset of validated cases (JSONL)
 │
-├── RECONSTRUCTION/
-│    └── CODE
-│    └── DATA
+├── reconstruction/
+│    └── scipts
 │
 ├── REPRODUCIBILITY.md
 └── README.md
