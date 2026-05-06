@@ -28,6 +28,10 @@ vulnalign-artifact/
 │   └── master_validated_dataset.jsonl                # Representative dataset snapshots of validation output, including both “good” and “noisy” cases (JSONL)
 │   └── unique_validated_dataset_for_review.jsonl      # Representative dataset snapshots of clean subset of validated cases (JSONL)
 │
+├── RECONSTRUCTION/
+│    └── CODE
+│    └── DATA
+│
 ├── REPRODUCIBILITY.md
 └── README.md
 
