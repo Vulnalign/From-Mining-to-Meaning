@@ -99,9 +99,7 @@ The full corpus is large (25GB), we provide a representative subset in the artif
 Note: We identified structural inconsistencies in patch-to-file alignment caused by patch overwriting and invalid repository references. 
 
 ### Dataset Reconstruction (Post-Submission)
+This directory contains sripts of the reconstructed version of the refined dataset, addressing issues in patch alignment identified after the ESORICS 2026 submission.
 
-To address this, we provide a reconstruction pipeline. The resulting aligned dataset is provided in: RECONSTRUCTION/Data/refined_dataset_full_aligned_extended_unique.csv
-
-Note:
-This dataset was reconstructed after submission and is not used in the experiments reported in the paper.
+Note: This dataset is not used in the experiments reported in the paper.
 
