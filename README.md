@@ -100,17 +100,7 @@ Note: We identified structural inconsistencies in patch-to-file alignment caused
 
 ### Dataset Reconstruction (Post-Submission)
 
-To address this, we provide a reconstruction pipeline:
-
-CODE/reconstruction/
-
-Steps:
-1. Build commit-to-repository mapping
-2. Merge mapping into dataset
-3. Re-extract aligned before/after code from GitHub
-4. The improved dataset is released for transparency and future work.
-
-The resulting aligned dataset is provided in: DATA/reconstructed/refined_dataset_aligned_mergeparent.csv
+To address this, we provide a reconstruction pipeline. The resulting aligned dataset is provided in: RECONSTRUCTION/Data/refined_dataset_full_aligned_extended_unique.csv
 
 Note:
 This dataset was reconstructed after submission and is not used in the experiments reported in the paper.
